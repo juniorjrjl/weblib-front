@@ -1,0 +1,15 @@
+#dvHeader{
+    background-color: #007ad9;
+    height: 90px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#btnMenu{
+    margin-top: 5px;
+    font-size: 32px;
+}
+
+#titleHeader{
+    font-weight: bold;
+}
