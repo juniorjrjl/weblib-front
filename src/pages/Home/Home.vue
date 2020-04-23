@@ -1,6 +1,6 @@
 <template>
     <Fragment>
-        <Form />
+        <FindCPF />
     </Fragment>
 </template>
 

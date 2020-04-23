@@ -1,21 +1,36 @@
 export default class UserInput{
 
-    constructor(name, email, cpf){
-        this,name = name;
-        this.email = email;
-        this.cpf = cpf;
+    constructor(build){
+        this.name = build.name;
+        this.email = build.email;
+        this.cpf = build.cpf;
     }
 
-    get name(){
-        return this.name;
-    }
+    static get Builder(){
+        class Builder{
 
-    get email(){
-        return this.email;
-    }
+            constructor(){}
 
-    get cpf(){
-        return this.cpf;
+            withCpf(cpf){
+                this.cpf = cpf.replace('.','').replace('.','').replace('-','');
+                return this;
+            }
+
+            withName(name){
+                this.name = name;
+                return this;
+            }
+
+            withEmail(email){
+                this.email = email;
+                return this
+            }
+            
+            build(){
+                return new UserInput(this)
+            }
+        }
+        return Builder;
     }
 
 }

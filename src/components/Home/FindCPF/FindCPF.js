@@ -1,16 +1,9 @@
-import Vue from 'vue'
 import { Fragment } from 'vue-fragment'
-import Card from 'primevue/card'
-import InputMask from 'primevue/inputmask';
-import Button from 'primevue/button';
 import User from '../../../service/User'
-
-Vue.component('Card', Card)
-Vue.component('InputMask', InputMask)
-Vue.component('Button', Button)
+import { required } from 'vuelidate/lib/validators'
 
 export default {
-    name: 'Form',
+    name: 'FindCPF',
     components: { Fragment },
     methods:{
         access: async function(){
@@ -25,6 +18,11 @@ export default {
     data: function(){
         return{
             cpf: ""
+        }
+    },
+    validations: {
+        cpf: {
+            required
         }
     }
 }

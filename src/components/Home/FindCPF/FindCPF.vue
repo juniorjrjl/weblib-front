@@ -22,7 +22,7 @@
                     <template slot="footer">
                         <div class="p-grid">
                             <div class="p-col-4 p-offset-4">
-                                <Button label="Acessar" @click="access"/>
+                                <Button label="Acessar" @click="access" :disabled="$v.cpf.$invalid"/>
                             </div>
                         </div>
                     </template>
@@ -33,6 +33,6 @@
     </Fragment>
 </template>
 
-<script src="./Form.js"></script>
+<script src="./FindCPF.js"></script>
 
-<style src="./Form.css"></style>
+<style src="./FindCPF.css"></style>

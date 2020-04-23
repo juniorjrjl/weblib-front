@@ -1,7 +1,7 @@
 <template>
   <Fragment>
     <Header />
-    <Home />
+    <NewUser />
     <Footer />
   </Fragment>
 </template>
