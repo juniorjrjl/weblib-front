@@ -8,7 +8,10 @@
         <h1 id="titleHeader">WebLib</h1>
       </div>
       <div class="p-col-1 p-md-1 p-lg-1">
-      <Sidebar :visible.sync="visibility" :baseZIndex="1000" position="left" />
+      <Sidebar :visible.sync="visibility" :baseZIndex="1000" position="left" >
+        <router-link to="/">Home</router-link> | 
+        <router-link to="/NewUser">NewUser</router-link>
+      </Sidebar>
       </div>
     </div>
   </Fragment>

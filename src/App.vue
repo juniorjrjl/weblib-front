@@ -1,7 +1,7 @@
 <template>
-  <Fragment>
+  <Fragment id="app">
     <Header />
-    <NewUser />
+      <router-view />
     <Footer />
   </Fragment>
 </template>
