@@ -1,4 +1,4 @@
-import { Fragment } from 'vue-fragment';
+
 
 export default {
     name: 'Header',
@@ -6,6 +6,5 @@ export default {
       return {
         visibility: false
       }
-    },
-    components: { Fragment }
+    }
 }

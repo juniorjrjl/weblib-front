@@ -14,7 +14,6 @@
     "primeicons": "^2.0.0",
     "primevue": "^1.2.0",
     "vue": "^2.6.11",
-    "vue-fragment": "^1.5.1",
     "vue-router": "^3.1.6",
     "vuelidate": "^0.7.5"
   },

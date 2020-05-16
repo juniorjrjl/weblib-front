@@ -1,7 +1,7 @@
 <template>
-    <Fragment>
+    <div>
         <Form />
-    </Fragment>
+    </div>
 </template>
 
 <script src="./NewUser.js"></script>

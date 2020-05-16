@@ -1,11 +1,9 @@
-import { Fragment } from 'vue-fragment';
 import  UserInput  from '../../../service/model/UserInput';
 import User from '../../../service/User'
 import { required, minLength, maxLength, email } from 'vuelidate/lib/validators';
 
 export default {
     name: 'Form',
-    components: { Fragment },
     data: function(){
         return{
             user: {

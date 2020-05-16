@@ -1,10 +1,9 @@
-import { Fragment } from 'vue-fragment'
+
 import User from '../../../service/User'
 import { required } from 'vuelidate/lib/validators'
 
 export default {
     name: 'FindCPF',
-    components: { Fragment },
     methods:{
         access: async function(){
             try{

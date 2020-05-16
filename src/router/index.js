@@ -6,8 +6,8 @@ import NewUser from '@/pages/NewUser/NewUser.vue'
 Vue.use(VueRouter)
 
 const routes = [
-    { path: '/', component: Home.default },
-    { path: '/NewUser', component: NewUser.default }
+    { path: '/', component: Home },
+    { path: '/NewUser', component: NewUser }
 ]
 
 export default new VueRouter({

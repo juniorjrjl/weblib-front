@@ -1,5 +1,5 @@
 <template>
-  <Fragment>
+  <div>
     <div class="p-grid" id="dvHeader">
       <div class="p-col-1 p-md-1 p-lg-1">
         <Button class="p-button-rounded" icon="pi pi-bars" @click="visibility = true" id="btnMenu"/>
@@ -14,7 +14,7 @@
       </Sidebar>
       </div>
     </div>
-  </Fragment>
+  </div>
 </template>
 
 <script src="./Header.js"></script>

@@ -1,9 +1,9 @@
 <template>
-  <Fragment id="app">
+  <div id="app">
     <Header />
       <router-view />
     <Footer />
-  </Fragment>
+  </div>
 </template>
 
 <script src="./App.js"></script>

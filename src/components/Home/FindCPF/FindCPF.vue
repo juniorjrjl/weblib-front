@@ -1,5 +1,5 @@
 <template>
-    <Fragment>
+    <div>
         <div class="p-grid p-align-center p-fluid" >
             <div class="p-md-3 p-lg-3"></div>
             <div class="p-col-12 p-sm-12 p-md-6 p-lg-6">
@@ -30,7 +30,7 @@
             </div>
             <div class="p-md-3 p-lg-3"></div>
         </div>
-    </Fragment>
+    </div>
 </template>
 
 <script src="./FindCPF.js"></script>

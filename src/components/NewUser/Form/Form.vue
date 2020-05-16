@@ -1,5 +1,5 @@
 <template>
-    <Fragment>
+    <div>
         <div class="p-grid" >
             <div class="p-md-3 p-lg-3"></div>
             <div class="p-col-12 p-sm-12 p-md-6 p-lg-6">
@@ -18,9 +18,9 @@
                                 <h3>Nome</h3>
                                 <InputText v-model="$v.user.name.$model" type="text" 
                                     v-bind:class="{'p-error': $v.user.name.$error}" @keyup="nameKeyup"/>
-                                <Fragment v-if="$v.user.name.$error">
+                                <div v-if="$v.user.name.$error">
                                     <Message severity="error" :closable="false" >{{userContraint.name}}</Message>
-                                </Fragment>
+                                </div>
                             </div>
                             <div class="p-md-2 p-lg-2"></div>
 
@@ -29,9 +29,9 @@
                                 <h3>E-mail</h3>
                                 <InputText v-model="$v.user.email.$model" type="text" 
                                     v-bind:class="{'p-error': $v.user.email.$error}" @keyup="emailKeyup"/>
-                                <Fragment v-if="$v.user.email.$error">
+                                <div v-if="$v.user.email.$error">
                                     <Message severity="error" :closable="false">{{userContraint.email}}</Message>
-                                </Fragment>
+                                </div>
                             </div>
                             <div class="p-md-2 p-lg-2"></div>
 
@@ -56,7 +56,7 @@
             </div>
             <div class="p-md-3 p-lg-3"></div>
         </div>
-    </Fragment>
+    </div>
 </template>
 
 <script src="./Form.js"></script>

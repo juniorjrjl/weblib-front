@@ -1,7 +1,7 @@
 <template>
-    <Fragment>
+    <div>
         <FindCPF />
-    </Fragment>
+    </div>
 </template>
 
 <script src="./Home.js"></script>
